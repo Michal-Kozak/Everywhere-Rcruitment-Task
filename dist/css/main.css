@@ -114,14 +114,14 @@ button {
   margin-top: 50px;
 }
 
-/* line 38, src/sass/components/_header.scss */
+/* line 39, src/sass/components/_header.scss */
 .header__subtitle {
   margin-top: 10px;
   font-size: 24px;
   margin-bottom: 30px;
 }
 
-/* line 50, src/sass/components/_header.scss */
+/* line 51, src/sass/components/_header.scss */
 .btn__readmore {
   border-radius: 23px;
   border: 1px solid #A6A6A6;
@@ -133,26 +133,26 @@ button {
   cursor: pointer;
 }
 
-/* line 60, src/sass/components/_header.scss */
+/* line 61, src/sass/components/_header.scss */
 .btn__readmore--article {
   display: none;
 }
 
 @media (max-width: 900px) {
-  /* line 67, src/sass/components/_header.scss */
+  /* line 69, src/sass/components/_header.scss */
   .header .header__top {
     padding-bottom: 50px;
   }
-  /* line 70, src/sass/components/_header.scss */
+  /* line 73, src/sass/components/_header.scss */
   .header .header__title {
     font-size: 32px;
     margin-top: 0px;
   }
-  /* line 74, src/sass/components/_header.scss */
+  /* line 78, src/sass/components/_header.scss */
   .header .header__subtitle {
     font-size: 15px;
   }
-  /* line 77, src/sass/components/_header.scss */
+  /* line 82, src/sass/components/_header.scss */
   .header .header_textcontet {
     margin-top: 0px;
   }
@@ -172,12 +172,12 @@ button {
       justify-content: space-around;
 }
 
-/* line 9, src/sass/components/_article.scss */
+/* line 10, src/sass/components/_article.scss */
 .article__about--article {
   display: none;
 }
 
-/* line 14, src/sass/components/_article.scss */
+/* line 15, src/sass/components/_article.scss */
 .article__articleTitle {
   max-width: 25%;
   display: -webkit-box;
@@ -189,7 +189,7 @@ button {
           flex-direction: column;
 }
 
-/* line 21, src/sass/components/_article.scss */
+/* line 22, src/sass/components/_article.scss */
 .article__articletext {
   color: white;
   font-size: 18px;
@@ -202,7 +202,7 @@ button {
 .article__title--articleTitle {
   padding-left: 30px;
   color: #FDFC18;
-  font-size: 48px;
+  font-size: 47px;
   font-family: bernino;
   word-spacing: 5px;
   margin: 0px;
@@ -238,7 +238,7 @@ button {
   line-height: 2;
 }
 
-/* line 70, src/sass/components/_article.scss */
+/* line 69, src/sass/components/_article.scss */
 .article__articleContent {
   max-width: 30%;
   display: -webkit-box;
@@ -256,7 +256,7 @@ button {
           justify-content: center;
 }
 
-/* line 79, src/sass/components/_article.scss */
+/* line 78, src/sass/components/_article.scss */
 .article__articletext--fulldesc {
   margin-top: 40px;
   color: white;
@@ -271,40 +271,40 @@ button {
   .article__articleContent {
     display: none;
   }
-  /* line 98, src/sass/components/_article.scss */
+  /* line 99, src/sass/components/_article.scss */
   __articleIntro {
     max-width: 100%;
   }
-  /* line 102, src/sass/components/_article.scss */
+  /* line 103, src/sass/components/_article.scss */
   .article__articleIntro, .article__articleTitle {
     max-width: 100%;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 109, src/sass/components/_article.scss */
+  /* line 110, src/sass/components/_article.scss */
   .article__title--articleSubtitle {
     margin: 10px 0px 30px 0px;
     font-size: 25px !important;
   }
-  /* line 114, src/sass/components/_article.scss */
+  /* line 115, src/sass/components/_article.scss */
   .article__articleTitle {
     max-width: 100%;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 119, src/sass/components/_article.scss */
+  /* line 121, src/sass/components/_article.scss */
   .article__articleTitle h1 {
     padding: 0px;
     font-size: 32px;
   }
-  /* line 124, src/sass/components/_article.scss */
+  /* line 126, src/sass/components/_article.scss */
   .article__articletext {
     margin-top: 10px;
     margin-bottom: 0px;
   }
-  /* line 129, src/sass/components/_article.scss */
+  /* line 131, src/sass/components/_article.scss */
   .article__about {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -319,7 +319,7 @@ button {
     padding-left: 15px;
     padding-right: 15px;
   }
-  /* line 136, src/sass/components/_article.scss */
+  /* line 138, src/sass/components/_article.scss */
   .btn__readmore--article {
     border-radius: 23px;
     margin-top: 20px;
@@ -335,4 +335,105 @@ button {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+/* line 1, src/sass/components/_statistics.scss */
+.statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  background-color: #FDFC18;
+  font-family: bernino;
+}
+
+/* line 11, src/sass/components/_statistics.scss */
+.statistics__item {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 20px 40px 20px;
+  text-align: center;
+}
+
+/* line 22, src/sass/components/_statistics.scss */
+.statistics__title {
+  font-size: 16px;
+  margin: 15px 0px 10px 0px;
+}
+
+/* line 26, src/sass/components/_statistics.scss */
+.statistics__subTitle {
+  font-size: 12px;
+  margin: 0px;
+}
+
+@media (max-width: 805px) {
+  /* line 35, src/sass/components/_statistics.scss */
+  .statistics__item {
+    width: 35%;
+  }
+}
+
+/* line 1, src/sass/components/_mainarticle.scss */
+.mainarticle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+}
+
+/* line 8, src/sass/components/_mainarticle.scss */
+.mainarticle__photo {
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/mainarticle-photo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 15, src/sass/components/_mainarticle.scss */
+.mainarticle__content {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

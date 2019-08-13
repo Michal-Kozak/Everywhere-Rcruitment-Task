@@ -1,44 +1,44 @@
-.article{
-  &__about{
+.article {
+  &__about {
     padding-bottom: 20px;
     padding-top: 20px;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    &--article{
+
+    &--article {
       display: none;
     }
   }
 
-  &__articleTitle{
+  &__articleTitle {
     max-width: 25%;
     display: flex;
     flex-direction: column;
 
   }
 
-  &__articletext{
+  &__articletext {
     color: white;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 400;
     font-family: bernino;
     line-height: 2;
 
 
-
   }
 
-  &__title--articleTitle{
+  &__title--articleTitle {
     padding-left: 30px;
     color: #FDFC18;
-    font-size: 48px;
+    font-size: 47px;
     font-family: bernino;
     word-spacing: 5px;
     margin: 0px;
   }
 
-  &__title--articleSubtitle{
+  &__title--articleSubtitle {
     padding-left: 30px;
     color: white;
     font-size: 35px;
@@ -46,7 +46,7 @@
     font-family: bernino;
   }
 
-  &__articleIntro{
+  &__articleIntro {
     max-width: 25%;
     display: flex;
     flex-direction: column;
@@ -55,19 +55,18 @@
   }
 
 
-  &__articletext{
+  &__articletext {
     color: white;
-    font-size:18px;
+    font-size: 18px;
     font-weight: 400;
     font-family: bernino;
     line-height: 2;
 
 
-
   }
 
 
-  &__articleContent{
+  &__articleContent {
     max-width: 30%;
     display: flex;
     flex-direction: column;
@@ -76,64 +75,67 @@
 
   }
 
-  &__articletext--fulldesc{
+  &__articletext--fulldesc {
     margin-top: 40px;
 
     color: white;
-    font-size:18px;
-    line-height:27px;
+    font-size: 18px;
+    line-height: 27px;
     font-weight: 400;
     font-family: bernino;
 
 
-
-  }}
-@media (max-width: 900px) {
-.article{
-  &__articleContent{
-  display: none;}
-}
-
-
-&__articleIntro{
-  max-width: 100%;
-
-}
-.article__articleIntro, .article__articleTitle{
-  max-width: 100%;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px ;
-
-}
-.article__title--articleSubtitle{
-  margin: 10px 0px 30px 0px;
-  font-size: 25px!important;
-
-}
-.article__articleTitle{
-  max-width: 100%;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px ;
-  h1{
-    padding: 0px;
-    font-size: 32px;
   }
 }
-.article__articletext{
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
 
-.article__about{
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-  .btn__readmore--article{
+@media (max-width: 900px) {
+  .article {
+    &__articleContent {
+      display: none;
+    }
+  }
+
+
+  &__articleIntro {
+    max-width: 100%;
+
+  }
+  .article__articleIntro, .article__articleTitle {
+    max-width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  .article__title--articleSubtitle {
+    margin: 10px 0px 30px 0px;
+    font-size: 25px !important;
+
+  }
+  .article__articleTitle {
+    max-width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    h1 {
+      padding: 0px;
+      font-size: 32px;
+    }
+  }
+  .article__articletext {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .article__about {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .btn__readmore--article {
     border-radius: 23px;
     margin-top: 20px;
     margin-bottom: 20px;
