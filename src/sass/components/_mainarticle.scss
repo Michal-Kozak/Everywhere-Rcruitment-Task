@@ -1,0 +1,45 @@
+.mainarticle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  &__photo {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/mainarticle-photo.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content {
+    background-color: rgba(22, 20, 20, 0.1);
+    height: 100%;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: bernino;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+    padding-top: 10%;
+    padding-left: 50px;
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-top: 5%;
+    margin-bottom: 30px;
+    line-height: 3;
+    padding-right: 100px;
+    padding-left: 50px;
+  }
+}
+
+
