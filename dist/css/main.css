@@ -86,7 +86,7 @@ button {
   background-color: black;
 }
 
-/* line 20, src/sass/components/_header.scss */
+/* line 21, src/sass/components/_header.scss */
 .header_textcontet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,7 +106,7 @@ button {
   padding: 0px 30px 0px 30px;
 }
 
-/* line 30, src/sass/components/_header.scss */
+/* line 31, src/sass/components/_header.scss */
 .header__title {
   font-size: 56px;
   font-weight: 700;
@@ -114,15 +114,52 @@ button {
   margin-top: 50px;
 }
 
-/* line 37, src/sass/components/_header.scss */
+/* line 38, src/sass/components/_header.scss */
 .header__subtitle {
   margin-top: 10px;
   font-size: 24px;
   margin-bottom: 30px;
 }
 
-/* line 45, src/sass/components/_header.scss */
-.header__about {
+/* line 50, src/sass/components/_header.scss */
+.btn__readmore {
+  border-radius: 23px;
+  border: 1px solid #A6A6A6;
+  padding: 10px 40px 10px 40px;
+  background-color: transparent;
+  color: rgba(254, 254, 254, 0.9);
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* line 60, src/sass/components/_header.scss */
+.btn__readmore--article {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  /* line 67, src/sass/components/_header.scss */
+  .header .header__top {
+    padding-bottom: 50px;
+  }
+  /* line 70, src/sass/components/_header.scss */
+  .header .header__title {
+    font-size: 32px;
+    margin-top: 0px;
+  }
+  /* line 74, src/sass/components/_header.scss */
+  .header .header__subtitle {
+    font-size: 15px;
+  }
+  /* line 77, src/sass/components/_header.scss */
+  .header .header_textcontet {
+    margin-top: 0px;
+  }
+}
+
+/* line 2, src/sass/components/_article.scss */
+.article__about {
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: black;
@@ -135,13 +172,13 @@ button {
       justify-content: space-around;
 }
 
-/* line 52, src/sass/components/_header.scss */
-.header__about--article {
+/* line 9, src/sass/components/_article.scss */
+.article__about--article {
   display: none;
 }
 
-/* line 57, src/sass/components/_header.scss */
-.header__articleTitle {
+/* line 14, src/sass/components/_article.scss */
+.article__articleTitle {
   max-width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,8 +189,17 @@ button {
           flex-direction: column;
 }
 
-/* line 64, src/sass/components/_header.scss */
-.header__title--articleTitle {
+/* line 21, src/sass/components/_article.scss */
+.article__articletext {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: bernino;
+  line-height: 2;
+}
+
+/* line 32, src/sass/components/_article.scss */
+.article__title--articleTitle {
   padding-left: 30px;
   color: #FDFC18;
   font-size: 48px;
@@ -162,8 +208,8 @@ button {
   margin: 0px;
 }
 
-/* line 73, src/sass/components/_header.scss */
-.header__title--articleSubtitle {
+/* line 41, src/sass/components/_article.scss */
+.article__title--articleSubtitle {
   padding-left: 30px;
   color: white;
   font-size: 35px;
@@ -171,8 +217,8 @@ button {
   font-family: bernino;
 }
 
-/* line 81, src/sass/components/_header.scss */
-.header__articleIntro {
+/* line 49, src/sass/components/_article.scss */
+.article__articleIntro {
   max-width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,8 +229,8 @@ button {
           flex-direction: column;
 }
 
-/* line 89, src/sass/components/_header.scss */
-.header__articletext {
+/* line 58, src/sass/components/_article.scss */
+.article__articletext {
   color: white;
   font-size: 18px;
   font-weight: 400;
@@ -192,8 +238,8 @@ button {
   line-height: 2;
 }
 
-/* line 101, src/sass/components/_header.scss */
-.header__articleContent {
+/* line 70, src/sass/components/_article.scss */
+.article__articleContent {
   max-width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,8 +256,8 @@ button {
           justify-content: center;
 }
 
-/* line 110, src/sass/components/_header.scss */
-.header__articletext--fulldesc {
+/* line 79, src/sass/components/_article.scss */
+.article__articletext--fulldesc {
   margin-top: 40px;
   color: white;
   font-size: 18px;
@@ -220,62 +266,46 @@ button {
   font-family: bernino;
 }
 
-/* line 126, src/sass/components/_header.scss */
-.btn__readmore {
-  border-radius: 23px;
-  border: 1px solid #A6A6A6;
-  padding: 10px 40px 10px 40px;
-  background-color: transparent;
-  color: rgba(254, 254, 254, 0.9);
-  font-size: 13px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-/* line 136, src/sass/components/_header.scss */
-.btn__readmore--article {
-  display: none;
-}
-
 @media (max-width: 900px) {
-  /* line 143, src/sass/components/_header.scss */
-  .header__articleContent {
+  /* line 93, src/sass/components/_article.scss */
+  .article__articleContent {
     display: none;
   }
-  /* line 148, src/sass/components/_header.scss */
+  /* line 98, src/sass/components/_article.scss */
   __articleIntro {
     max-width: 100%;
   }
-  /* line 152, src/sass/components/_header.scss */
-  .header__articleIntro, .header__articleTitle {
+  /* line 102, src/sass/components/_article.scss */
+  .article__articleIntro, .article__articleTitle {
     max-width: 100%;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 159, src/sass/components/_header.scss */
-  .header__title--articleSubtitle {
+  /* line 109, src/sass/components/_article.scss */
+  .article__title--articleSubtitle {
     margin: 10px 0px 30px 0px;
     font-size: 25px !important;
   }
-  /* line 164, src/sass/components/_header.scss */
-  .header__articleTitle {
+  /* line 114, src/sass/components/_article.scss */
+  .article__articleTitle {
     max-width: 100%;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 169, src/sass/components/_header.scss */
-  .header__articleTitle h1 {
+  /* line 119, src/sass/components/_article.scss */
+  .article__articleTitle h1 {
     padding: 0px;
     font-size: 32px;
   }
-  /* line 174, src/sass/components/_header.scss */
-  .header__articletext {
+  /* line 124, src/sass/components/_article.scss */
+  .article__articletext {
     margin-top: 10px;
+    margin-bottom: 0px;
   }
-  /* line 179, src/sass/components/_header.scss */
-  .header__about {
+  /* line 129, src/sass/components/_article.scss */
+  .article__about {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -289,27 +319,11 @@ button {
     padding-left: 15px;
     padding-right: 15px;
   }
-  /* line 186, src/sass/components/_header.scss */
-  .header__top {
-    padding-bottom: 50px;
-  }
-  /* line 189, src/sass/components/_header.scss */
-  .header__title {
-    font-size: 32px;
-    margin-top: 0px;
-  }
-  /* line 193, src/sass/components/_header.scss */
-  .header__subtitle {
-    font-size: 15px;
-  }
-  /* line 196, src/sass/components/_header.scss */
-  .header_textcontet {
-    margin-top: 0px;
-  }
-  /* line 200, src/sass/components/_header.scss */
+  /* line 136, src/sass/components/_article.scss */
   .btn__readmore--article {
     border-radius: 23px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid #A6A6A6;
     padding: 10px 40px 10px 40px;
     background-color: transparent;
@@ -317,5 +331,8 @@ button {
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
