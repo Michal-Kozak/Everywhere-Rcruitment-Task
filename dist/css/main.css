@@ -295,12 +295,17 @@ button {
   /* line 187, src/sass/components/_header.scss */
   .header__title {
     font-size: 32px;
+    margin-top: 0px;
   }
-  /* line 190, src/sass/components/_header.scss */
+  /* line 191, src/sass/components/_header.scss */
   .header__subtitle {
     font-size: 15px;
   }
   /* line 194, src/sass/components/_header.scss */
+  .header_textcontet {
+    margin-top: 0px;
+  }
+  /* line 198, src/sass/components/_header.scss */
   .btn__readmore--article {
     border-radius: 23px;
     margin-top: 10px;

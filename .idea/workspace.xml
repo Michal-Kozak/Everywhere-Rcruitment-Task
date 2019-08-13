@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12115cfa-7060-48a5-aafd-d50aaa159dce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/copy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/copy/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_header.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/components/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="136" column="18" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
+            <state relative-caret-position="249">
+              <caret line="194" column="19" selection-start-line="194" selection-start-column="19" selection-end-line="194" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -118,6 +113,7 @@
       <find>js-yaml</find>
       <find>48px</find>
       <find>title--articleTitle</find>
+      <find>textcontet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,12 +226,12 @@
       <workItem from="1565689601881" duration="1792000" />
       <workItem from="1565691447884" duration="1869000" />
       <workItem from="1565693353338" duration="1795000" />
-      <workItem from="1565695166915" duration="1277000" />
+      <workItem from="1565695166915" duration="1432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18410000" />
+    <option name="totallyTimeSpent" value="18565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="170" width="1400" height="1005" extended-state="0" />
@@ -362,8 +358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/components/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="136" column="18" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
+        <state relative-caret-position="249">
+          <caret line="194" column="19" selection-start-line="194" selection-start-column="19" selection-end-line="194" selection-end-column="19" />
         </state>
       </provider>
     </entry>
