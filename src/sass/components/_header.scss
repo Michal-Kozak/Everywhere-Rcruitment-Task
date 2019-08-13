@@ -1,15 +1,17 @@
+
 .header {
-
+  height: 100vh;
+  width: 100%;
   &__top{
-
+    height: 40%;
   }
 
   &__about{
-
+    height: 40%;
   }
 
-  &_statistics{
-
+  &__statistics{
+    height: 20%;
   }
 
 }

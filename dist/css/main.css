@@ -1,0 +1,46 @@
+/*!
+ * Everywhere Rcruitment Task v0.0.1
+ * Rcruitment Task
+ * (c) 2019 Michal Kozak
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/**
+ * @section Base Styles
+ */
+/* line 5, src/sass/components/_base.scss */
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 11, src/sass/components/_base.scss */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* line 2, src/sass/components/_header.scss */
+.header {
+  height: 100vh;
+  width: 100%;
+}
+
+/* line 5, src/sass/components/_header.scss */
+.header__top {
+  height: 40%;
+}
+
+/* line 9, src/sass/components/_header.scss */
+.header__about {
+  height: 40%;
+}
+
+/* line 13, src/sass/components/_header.scss */
+.header__statistics {
+  height: 20%;
+}
