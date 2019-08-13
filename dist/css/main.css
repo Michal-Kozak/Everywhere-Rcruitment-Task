@@ -286,25 +286,26 @@ button {
   .article__title--articleSubtitle {
     margin: 10px 0px 30px 0px;
     font-size: 25px !important;
+    margin-bottom: 5px;
   }
-  /* line 115, src/sass/components/_article.scss */
+  /* line 116, src/sass/components/_article.scss */
   .article__articleTitle {
     max-width: 100%;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 121, src/sass/components/_article.scss */
+  /* line 122, src/sass/components/_article.scss */
   .article__articleTitle h1 {
     padding: 0px;
     font-size: 32px;
   }
-  /* line 126, src/sass/components/_article.scss */
+  /* line 127, src/sass/components/_article.scss */
   .article__articletext {
     margin-top: 10px;
     margin-bottom: 0px;
   }
-  /* line 131, src/sass/components/_article.scss */
+  /* line 132, src/sass/components/_article.scss */
   .article__about {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -319,7 +320,7 @@ button {
     padding-left: 15px;
     padding-right: 15px;
   }
-  /* line 138, src/sass/components/_article.scss */
+  /* line 139, src/sass/components/_article.scss */
   .btn__readmore--article {
     border-radius: 23px;
     margin-top: 20px;
@@ -382,14 +383,14 @@ button {
   margin: 15px 0px 10px 0px;
 }
 
-/* line 26, src/sass/components/_statistics.scss */
+/* line 27, src/sass/components/_statistics.scss */
 .statistics__subTitle {
   font-size: 12px;
   margin: 0px;
 }
 
 @media (max-width: 805px) {
-  /* line 35, src/sass/components/_statistics.scss */
+  /* line 36, src/sass/components/_statistics.scss */
   .statistics__item {
     width: 35%;
   }
@@ -401,13 +402,13 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 500px;
+  height: 100vh;
 }
 
 /* line 8, src/sass/components/_mainarticle.scss */
@@ -419,10 +420,152 @@ button {
   background-size: cover;
 }
 
-/* line 15, src/sass/components/_mainarticle.scss */
+/* line 16, src/sass/components/_mainarticle.scss */
 .mainarticle__content {
+  background-color: rgba(22, 20, 20, 0.1);
   height: 100%;
   width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: bernino;
+}
+
+/* line 27, src/sass/components/_mainarticle.scss */
+.mainarticle__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0px 0px 10px 0px;
+  padding-top: 10%;
+  padding-left: 50px;
+}
+
+/* line 35, src/sass/components/_mainarticle.scss */
+.mainarticle__text {
+  font-size: 18px;
+  margin-top: 5%;
+  margin-bottom: 30px;
+  line-height: 3;
+  padding-right: 100px;
+  padding-left: 50px;
+}
+
+/* line 1, src/sass/components/_ourServices.scss */
+.ourServices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 7, src/sass/components/_ourServices.scss */
+.ourServices__content {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+/* line 15, src/sass/components/_ourServices.scss */
+.ourServices__text {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: bernino;
+  text-align: center;
+}
+
+/* line 25, src/sass/components/_ourServices.scss */
+.ourServices__title {
+  font-size: 38px;
+  margin-bottom: 5px;
+}
+
+/* line 30, src/sass/components/_ourServices.scss */
+.ourServices__title--photos {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+/* line 37, src/sass/components/_ourServices.scss */
+.ourServices__p {
+  font-size: 16px;
+}
+
+/* line 40, src/sass/components/_ourServices.scss */
+.ourServices__p--photos {
+  font-size: 16px;
+  margin-top: 0;
+  color: #FDFC18;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* line 48, src/sass/components/_ourServices.scss */
+.ourServices__projects {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: bernino;
+  text-align: center;
+}
+
+/* line 59, src/sass/components/_ourServices.scss */
+.ourServices__bigItem {
+  width: calc(50% - 5px);
+  margin: 2.5px;
+  height: 359px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,4 +579,40 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/* line 72, src/sass/components/_ourServices.scss */
+.ourServices__smallItem {
+  width: calc(25% - 5px);
+  margin: 2.5px;
+  height: 359px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  /* line 85, src/sass/components/_ourServices.scss */
+  .ourServices__content {
+    width: 100%;
+    padding: 0px;
+  }
+  /* line 89, src/sass/components/_ourServices.scss */
+  .ourServices__bigItem {
+    width: 100%;
+  }
+  /* line 92, src/sass/components/_ourServices.scss */
+  .ourServices__smallItem {
+    width: calc(50% - 5px);
+  }
 }

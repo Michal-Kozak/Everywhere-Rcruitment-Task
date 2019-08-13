@@ -8,31 +8,32 @@
   font-family: bernino;
 
 
-  &__item{
+  &__item {
     width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding:40px 20px 40px 20px;
+    padding: 40px 20px 40px 20px;
     text-align: center;
   }
 
-  &__title{
+  &__title {
     font-size: 16px;
     margin: 15px 0px 10px 0px;
   }
-  &__subTitle{
+
+  &__subTitle {
     font-size: 12px;
     margin: 0px;
   }
 }
 
 @media (max-width: 805px) {
-  .statistics{
+  .statistics {
 
-    &__item{
+    &__item {
       width: 35%;
     }
   }
