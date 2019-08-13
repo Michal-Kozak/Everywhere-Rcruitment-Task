@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/components/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="194" column="19" selection-start-line="194" selection-start-column="19" selection-end-line="194" selection-end-column="19" />
+            <state relative-caret-position="196">
+              <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -114,6 +114,8 @@
       <find>48px</find>
       <find>title--articleTitle</find>
       <find>textcontet</find>
+      <find>header__title--articleSubtitle</find>
+      <find>__title--articleSubtitle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-2" />
     <option name="y" value="170" />
     <option name="width" value="1400" />
@@ -226,12 +228,12 @@
       <workItem from="1565689601881" duration="1792000" />
       <workItem from="1565691447884" duration="1869000" />
       <workItem from="1565693353338" duration="1795000" />
-      <workItem from="1565695166915" duration="1432000" />
+      <workItem from="1565695166915" duration="1583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18565000" />
+    <option name="totallyTimeSpent" value="18716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="170" width="1400" height="1005" extended-state="0" />
@@ -358,8 +360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/components/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="194" column="19" selection-start-line="194" selection-start-column="19" selection-end-line="194" selection-end-column="19" />
+        <state relative-caret-position="196">
+          <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
         </state>
       </provider>
     </entry>
