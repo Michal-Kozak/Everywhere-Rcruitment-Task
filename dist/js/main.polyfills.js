@@ -1,5 +1,5 @@
 /*!
- * Everywhere Rcruitment Task v0.0.1
+ * Everywhere-Rcruitment-Task v0.0.1
  * Rcruitment Task
  * (c) 2019 Michal Kozak
  * MIT License
