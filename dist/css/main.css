@@ -489,10 +489,10 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px;
+  padding: 50px 50px 50px 50px;
 }
 
-/* line 15, src/sass/components/_ourServices.scss */
+/* line 16, src/sass/components/_ourServices.scss */
 .ourServices__text {
   width: 60%;
   display: -webkit-box;
@@ -512,13 +512,13 @@ button {
   text-align: center;
 }
 
-/* line 25, src/sass/components/_ourServices.scss */
+/* line 27, src/sass/components/_ourServices.scss */
 .ourServices__title {
   font-size: 38px;
   margin-bottom: 5px;
 }
 
-/* line 30, src/sass/components/_ourServices.scss */
+/* line 33, src/sass/components/_ourServices.scss */
 .ourServices__title--photos {
   font-size: 28px;
   color: white;
@@ -526,12 +526,12 @@ button {
   font-weight: 400;
 }
 
-/* line 37, src/sass/components/_ourServices.scss */
+/* line 41, src/sass/components/_ourServices.scss */
 .ourServices__p {
   font-size: 16px;
 }
 
-/* line 40, src/sass/components/_ourServices.scss */
+/* line 45, src/sass/components/_ourServices.scss */
 .ourServices__p--photos {
   font-size: 16px;
   margin-top: 0;
@@ -540,7 +540,7 @@ button {
   cursor: pointer;
 }
 
-/* line 48, src/sass/components/_ourServices.scss */
+/* line 54, src/sass/components/_ourServices.scss */
 .ourServices__projects {
   width: 95%;
   display: -webkit-box;
@@ -558,7 +558,7 @@ button {
   text-align: center;
 }
 
-/* line 59, src/sass/components/_ourServices.scss */
+/* line 66, src/sass/components/_ourServices.scss */
 .ourServices__bigItem {
   width: calc(50% - 5px);
   margin: 2.5px;
@@ -581,7 +581,7 @@ button {
           align-items: center;
 }
 
-/* line 72, src/sass/components/_ourServices.scss */
+/* line 80, src/sass/components/_ourServices.scss */
 .ourServices__smallItem {
   width: calc(25% - 5px);
   margin: 2.5px;
@@ -602,17 +602,147 @@ button {
 }
 
 @media (max-width: 900px) {
-  /* line 85, src/sass/components/_ourServices.scss */
+  /* line 94, src/sass/components/_ourServices.scss */
   .ourServices__content {
     width: 100%;
-    padding: 0px;
+    padding: 0px 0px 50px 0px;
   }
-  /* line 89, src/sass/components/_ourServices.scss */
+  /* line 99, src/sass/components/_ourServices.scss */
   .ourServices__bigItem {
     width: 100%;
   }
-  /* line 92, src/sass/components/_ourServices.scss */
+  /* line 103, src/sass/components/_ourServices.scss */
   .ourServices__smallItem {
     width: calc(50% - 5px);
+  }
+}
+
+/* line 1, src/sass/components/_news.scss */
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #252525;
+}
+
+/* line 7, src/sass/components/_news.scss */
+.news__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: bernino;
+  text-align: center;
+}
+
+/* line 15, src/sass/components/_news.scss */
+.news__title {
+  font-size: 38px;
+  color: white;
+}
+
+/* line 19, src/sass/components/_news.scss */
+.news__newsList {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: bernino;
+  padding: 0px 10px 50px 10px;
+}
+
+/* line 28, src/sass/components/_news.scss */
+.news__newsItem {
+  width: calc(25% - 50px);
+  margin: 20px;
+  min-height: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 5px solid yellow;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 41, src/sass/components/_news.scss */
+.news__itemText {
+  width: 70%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 10%;
+}
+
+/* line 50, src/sass/components/_news.scss */
+.news__itemTitle {
+  font-size: 27px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 57, src/sass/components/_news.scss */
+.news__itemDate {
+  font-size: 13px;
+  color: white;
+}
+
+/* line 61, src/sass/components/_news.scss */
+.news__itemP {
+  font-size: 12px;
+  color: white;
+  line-height: 2;
+}
+
+@media (max-width: 1000px) {
+  /* line 69, src/sass/components/_news.scss */
+  .news__newsItem {
+    width: calc(50% - 50px);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* line 77, src/sass/components/_news.scss */
+  .news__newsItem {
+    width: calc(100% - 25px);
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }

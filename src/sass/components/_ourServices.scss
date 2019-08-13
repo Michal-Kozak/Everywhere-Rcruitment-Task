@@ -1,18 +1,19 @@
-.ourServices{
+.ourServices {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  &__content{
+  &__content {
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px;
+    padding: 50px 50px 50px 50px;
   }
-  &__text{
+
+  &__text {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -22,22 +23,26 @@
     text-align: center;
 
   }
-  &__title{
+
+  &__title {
     font-size: 38px;
     margin-bottom: 5px;
 
   }
-&__title--photos{
-  font-size: 28px;
-  color: white;
-  margin-bottom: 5px;
-  font-weight: 400;
 
-}
-  &__p{
+  &__title--photos {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 400;
+
+  }
+
+  &__p {
     font-size: 16px;
   }
-  &__p--photos{
+
+  &__p--photos {
     font-size: 16px;
     margin-top: 0;
     color: #FDFC18;
@@ -45,7 +50,8 @@
     cursor: pointer;
 
   }
-  &__projects{
+
+  &__projects {
     width: 95%;
     display: flex;
     justify-content: center;
@@ -56,7 +62,8 @@
 
 
   }
-  &__bigItem{
+
+  &__bigItem {
     width: calc(50% - 5px);
     margin: 2.5px;
     height: 359px;
@@ -69,7 +76,8 @@
     align-items: center;
 
   }
-  &__smallItem{
+
+  &__smallItem {
     width: calc(25% - 5px);
     margin: 2.5px;
     height: 359px;
@@ -80,16 +88,19 @@
 
   }
 }
+
 @media (max-width: 900px) {
-  .ourServices{
-    &__content{
+  .ourServices {
+    &__content {
       width: 100%;
-      padding: 0px;
+      padding: 0px 0px 50px 0px;
     }
-    &__bigItem{
+
+    &__bigItem {
       width: 100%;
     }
-    &__smallItem{
+
+    &__smallItem {
       width: calc(50% - 5px);
 
 
