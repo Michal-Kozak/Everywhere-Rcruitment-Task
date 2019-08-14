@@ -1118,7 +1118,7 @@ button {
 /* line 45, src/sass/components/_navigation.scss */
 .navbar ul.links li {
   text-transform: uppercase;
-  padding: 0 15px;
+  padding: 0 20px;
   height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1137,7 +1137,7 @@ button {
 .navbar ul.links li a {
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
 }
 
