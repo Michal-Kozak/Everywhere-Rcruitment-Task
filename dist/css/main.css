@@ -1082,7 +1082,7 @@ button {
   font-family: bernino;
   color: white;
   padding: 15px;
-  width: 80%;
+  width: 90%;
   height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1095,7 +1095,7 @@ button {
 /* line 27, src/sass/components/_navigation.scss */
 .navbar .logo {
   cursor: pointer;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 
 /* line 33, src/sass/components/_navigation.scss */
@@ -1118,7 +1118,7 @@ button {
 /* line 45, src/sass/components/_navigation.scss */
 .navbar ul.links li {
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 0 15px;
   height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;

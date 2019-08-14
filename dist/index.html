@@ -18,7 +18,7 @@
 
 
             <ul class="links">
-                <li><a href="#home">O firmie</a></li>
+                <li><a href="#home">About</a></li>
                 <li><a href="#projects">Oferta</a></li>
                     <li><a href="#news">Aktualnosci</a></li>
                 <li><a href="#">Realizacje</a></li>
@@ -253,31 +253,6 @@
 
     </div>
 </footer>
-<script>
-    const navbar = document.querySelector('.navbar')
-
-    navbar.querySelector('.toggle').addEventListener('click',()=>{
-
-        navbar.classList.toggle('collapsed')
-
-    })
-
-
-
-    window.addEventListener('scroll',(e)=>{
-
-        let windowY = window.pageYOffset
-
-        let navbarHeight = document.querySelector('.navbar').offsetHeight
-
-        if(windowY>navbarHeight) navbar.classList.add('sticky')
-    else navbar.classList.remove('sticky')
-
-
-
-
-    })
-</script>
 <!-- Scripts -->
 <script src="js/main.polyfills.js"></script>
 </body>
