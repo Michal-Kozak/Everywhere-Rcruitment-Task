@@ -9,6 +9,34 @@
 </head>
 <body>
 <header class="header" id="home">
+    <nav class="navigation">
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="img/logo.png" height="43" width="200" alt="logo">
+            </div>
+
+
+            <ul class="links">
+                <li><a href="#home">O firmie</a></li>
+                <li><a href="#projects">Oferta</a></li>
+                    <li><a href="#news">Aktualnosci</a></li>
+                <li><a href="#">Realizacje</a></li>
+                <li><a href="#Contact">Kontakt</a></li>
+            </ul>
+
+            <div class="toggle">
+                <div class="span1"></div>
+                <div class="span2"></div>
+                <div class="span3"></div>
+            </div>
+
+
+        </div>
+
+
+
+    </nav>
     <div class="header__top">
         <div class="header_textcontet">
             <h1 class="header__title">Building Brands. Getting Results.</h1>
@@ -225,6 +253,31 @@
 
     </div>
 </footer>
+<script>
+    const navbar = document.querySelector('.navbar')
+
+    navbar.querySelector('.toggle').addEventListener('click',()=>{
+
+        navbar.classList.toggle('collapsed')
+
+    })
+
+
+
+    window.addEventListener('scroll',(e)=>{
+
+        let windowY = window.pageYOffset
+
+        let navbarHeight = document.querySelector('.navbar').offsetHeight
+
+        if(windowY>navbarHeight) navbar.classList.add('sticky')
+    else navbar.classList.remove('sticky')
+
+
+
+
+    })
+</script>
 <!-- Scripts -->
 <script src="js/main.polyfills.js"></script>
 </body>

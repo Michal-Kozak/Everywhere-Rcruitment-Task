@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Lacquer');
+
+$navbarHeight: 65px;
+$sidebarWidth: 45vw;
+$secondary: #ffc600;
+
+.navigation {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar {
+  font-family: bernino;
+  color: white;
+  padding: 15px;
+  width: 80%;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+
+.navbar ul.links {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: 50px;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  transition: 0.4s ease all, 0s ease background;
+
+  li {
+    text-transform: uppercase;
+    padding: 0 20px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.4s ease all, 0s ease margin;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      a {
+        border-bottom: 1px solid white;
+      }
+
+    }
+
+
+  }
+
+}
+
+
+.navbar.sticky {
+  position: fixed;
+  z-index: 40;
+  background-color: rgba(0, 0, 0, 0.95);
+  width: 100%;
+
+
+  ~ main {
+    position: relative;
+    z-index: 20;
+    top: 65px;
+  }
+
+}
+
+section {
+  background: #000;
+  padding: 20px;
+  font-family: bernino;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+
+// RESPONSIVE
+
+@media screen and (max-width: 750px) {
+
+
+  .navbar .right {
+    height: 0;
+    overflow: hidden;
+  }
+
+
+  .toggle {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 99;
+    padding-right: 15px;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    > * {
+      width: 80%;
+      height: 2px;
+      background: #fff;
+      margin: 3px 0;
+    }
+
+  }
+
+  .navbar.collapsed .toggle {
+
+    .span1 {
+      transform: rotate(-45deg) translate(-4px, 5px);
+    }
+
+    .span2 {
+      opacity: 0;
+    }
+
+    .span3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+  }
+
+
+  .navbar.collapsed .logo {
+    position: absolute;
+    z-index: 44;
+
+  }
+
+  .navbar .links {
+    position: fixed;
+    background: #080808;
+    z-index: 40;
+    top: 0;
+    left: -100%;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+
+    li:first-child {
+      margin-top: 80px;
+    }
+
+  }
+
+  .navbar.collapsed .links {
+    left: 0;
+
+    a {
+      color: #fff;
+    }
+
+    li {
+      width: 100%;
+
+      &:hover a {
+        color: white;
+      }
+
+    }
+
+
+  }
+
+  .navbar.collapsed .right {
+    position: fixed;
+    width: 80%;
+    text-align: center;
+    height: auto;
+    bottom: 40px;
+    left: 80%/2;
+    transform: translateX(-50%);
+    z-index: 45;
+  }
+
+
+  .navbar.collapsed {
+
+    ~ main {
+      filter: blur(1px);
+      opacity: 0.8;
+    }
+
+  }
+
+
+  .navbar.sticky {
+    position: fixed;
+    z-index: 40;
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 100%;
+
+  }
+  .logo {
+    padding-left: 15px;
+  }
+}
+
+
+
+
+

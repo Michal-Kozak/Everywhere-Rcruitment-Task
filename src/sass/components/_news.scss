@@ -45,6 +45,9 @@
     background-repeat: no-repeat;
 
   }
+  &__newsItem:hover{
+    border: 5px solid yellow;
+  }
 
   &__itemText {
     width: 70%;
