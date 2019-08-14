@@ -82,7 +82,11 @@
     color: #616161;
     font-size: 12px;
     font-weight: 400;
+    text-decoration: none;
 
+  }
+  &__menuItem:hover{
+    color: yellow;
   }
 }
 
