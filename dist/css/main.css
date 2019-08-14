@@ -505,7 +505,15 @@ button {
   .hide {
     display: none;
   }
-  /* line 101, src/sass/components/_mainarticle.scss */
+  /* line 100, src/sass/components/_mainarticle.scss */
+  .mainarticle {
+    min-height: 20px;
+  }
+  /* line 102, src/sass/components/_mainarticle.scss */
+  .mainarticle__text {
+    min-height: 20px;
+  }
+  /* line 105, src/sass/components/_mainarticle.scss */
   .mainarticle__textContent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -520,27 +528,29 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 5px;
+    padding: 25px;
     text-align: center;
+    min-height: 20px;
   }
-  /* line 110, src/sass/components/_mainarticle.scss */
+  /* line 116, src/sass/components/_mainarticle.scss */
   .mainarticle__Title {
     font-size: 17px;
+    margin-bottom: 15px;
   }
-  /* line 115, src/sass/components/_mainarticle.scss */
+  /* line 122, src/sass/components/_mainarticle.scss */
   .mainarticle__p {
     font-size: 14px;
     line-height: 2;
   }
-  /* line 120, src/sass/components/_mainarticle.scss */
+  /* line 127, src/sass/components/_mainarticle.scss */
   .mainarticle__photo {
-    width: 30% !important;
+    display: none;
   }
-  /* line 124, src/sass/components/_mainarticle.scss */
+  /* line 131, src/sass/components/_mainarticle.scss */
   .mainarticle__text {
     width: 90%;
   }
-  /* line 129, src/sass/components/_mainarticle.scss */
+  /* line 136, src/sass/components/_mainarticle.scss */
   .btn__readmore {
     font-size: 10px;
   }

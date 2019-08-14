@@ -98,17 +98,24 @@
     display: none;
   }
   .mainarticle {
+    min-height: 20px;
+    &__text{
+      min-height: 20px;
+    }
     &__textContent {
+
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 5px;
+      padding: 25px;
       text-align: center;
+      min-height: 20px;
     }
 
     &__Title {
       font-size: 17px;
+      margin-bottom: 15px;
 
     }
 
@@ -118,7 +125,7 @@
     }
 
     &__photo {
-      width: 30% !important;
+      display: none;
     }
 
     &__text {
