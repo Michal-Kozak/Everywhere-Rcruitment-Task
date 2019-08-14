@@ -746,3 +746,211 @@ button {
     margin-left: 10px;
   }
 }
+
+/* line 1, src/sass/components/_footer.scss */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #171717;
+  color: white;
+  font-family: bernino;
+}
+
+/* line 8, src/sass/components/_footer.scss */
+.footer__content {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 14, src/sass/components/_footer.scss */
+.footer__logo {
+  padding: 50px 30px 30px 30px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 21, src/sass/components/_footer.scss */
+.footer__logoP {
+  font-size: 12px;
+  line-height: 2;
+  color: #616161;
+}
+
+/* line 26, src/sass/components/_footer.scss */
+.footer__credits {
+  font-size: 10px;
+}
+
+/* line 29, src/sass/components/_footer.scss */
+.footer__contact {
+  padding: 50px 30px 30px 30px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 36, src/sass/components/_footer.scss */
+.footer__contactContet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+/* line 43, src/sass/components/_footer.scss */
+.footer__contactText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 48, src/sass/components/_footer.scss */
+.footer__contactTitle {
+  font-size: 14.5px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+/* line 53, src/sass/components/_footer.scss */
+.footer__contactSubTitle {
+  font-size: 13.5px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* line 59, src/sass/components/_footer.scss */
+.footer__menu {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 70, src/sass/components/_footer.scss */
+.footer__menuItem {
+  color: #616161;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* line 77, src/sass/components/_footer.scss */
+.btn__contact {
+  border-radius: 23px;
+  border: 1px solid #FDFC18;
+  padding: 10px 40px 10px 40px;
+  background-color: #FDFC18;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  /* line 88, src/sass/components/_footer.scss */
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  /* line 92, src/sass/components/_footer.scss */
+  .footer__contact {
+    width: 90%;
+  }
+  /* line 95, src/sass/components/_footer.scss */
+  .footer__contactContet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* line 98, src/sass/components/_footer.scss */
+  .footer__contactTitle {
+    font-size: 18px;
+  }
+  /* line 101, src/sass/components/_footer.scss */
+  .footer__contactSubTitle {
+    font-size: 16px;
+  }
+  /* line 104, src/sass/components/_footer.scss */
+  .footer__logo {
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0px;
+  }
+  /* line 110, src/sass/components/_footer.scss */
+  .footer__menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px;
+  }
+  /* line 114, src/sass/components/_footer.scss */
+  .footer__menuItem {
+    margin-right: 15px;
+  }
+}
