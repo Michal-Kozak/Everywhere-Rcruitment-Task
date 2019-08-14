@@ -49,17 +49,20 @@
 
 // Button - Read More
 .btn__readmore {
-  border-radius: 23px;
-  border: 1px solid #A6A6A6;
-  padding: 10px 40px 10px 40px;
-  background-color: transparent;
-  color: rgba(254, 254, 254, 0.9);
-  font-size: 13px;
-  font-weight: 400;
-  cursor: pointer;
 
   &--article {
     display: none;
+  }
+
+  &--header {
+    border-radius: 23px;
+    border: 1px solid #A6A6A6;
+    padding: 10px 40px 10px 40px;
+    background-color: transparent;
+    color: rgba(254, 254, 254, 0.9);
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
   }
 
 }

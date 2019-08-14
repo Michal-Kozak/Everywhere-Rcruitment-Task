@@ -41,14 +41,19 @@
   font-weight: 700;
 }
 
-/* line 27, src/sass/components/_base.scss */
+/* line 36, src/sass/components/_base.scss */
+html {
+  height: 100%;
+}
+
+/* line 40, src/sass/components/_base.scss */
 body {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 33, src/sass/components/_base.scss */
+/* line 46, src/sass/components/_base.scss */
 input,
 textarea,
 select,
@@ -121,8 +126,13 @@ button {
   margin-bottom: 30px;
 }
 
-/* line 51, src/sass/components/_header.scss */
-.btn__readmore {
+/* line 53, src/sass/components/_header.scss */
+.btn__readmore--article {
+  display: none;
+}
+
+/* line 57, src/sass/components/_header.scss */
+.btn__readmore--header {
   border-radius: 23px;
   border: 1px solid #A6A6A6;
   padding: 10px 40px 10px 40px;
@@ -133,26 +143,21 @@ button {
   cursor: pointer;
 }
 
-/* line 61, src/sass/components/_header.scss */
-.btn__readmore--article {
-  display: none;
-}
-
 @media (max-width: 900px) {
-  /* line 69, src/sass/components/_header.scss */
+  /* line 72, src/sass/components/_header.scss */
   .header .header__top {
     padding-bottom: 50px;
   }
-  /* line 73, src/sass/components/_header.scss */
+  /* line 76, src/sass/components/_header.scss */
   .header .header__title {
     font-size: 32px;
     margin-top: 0px;
   }
-  /* line 78, src/sass/components/_header.scss */
+  /* line 81, src/sass/components/_header.scss */
   .header .header__subtitle {
     font-size: 15px;
   }
-  /* line 82, src/sass/components/_header.scss */
+  /* line 85, src/sass/components/_header.scss */
   .header .header_textcontet {
     margin-top: 0px;
   }
@@ -398,62 +403,145 @@ button {
 
 /* line 1, src/sass/components/_mainarticle.scss */
 .mainarticle {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 650px;
+  font-family: bernino;
+  background-color: #F5F5F5;
 }
 
-/* line 8, src/sass/components/_mainarticle.scss */
+/* line 10, src/sass/components/_mainarticle.scss */
 .mainarticle__photo {
-  width: 50%;
+  min-height: 650px;
   height: 100%;
+  width: 50%;
   background-image: url(../img/mainarticle-photo.png);
-  background-position: center;
-  background-size: cover;
 }
 
-/* line 16, src/sass/components/_mainarticle.scss */
-.mainarticle__content {
-  background-color: rgba(22, 20, 20, 0.1);
-  height: 100%;
+/* line 17, src/sass/components/_mainarticle.scss */
+.mainarticle__text {
+  min-height: 650px;
   width: 50%;
-  padding-left: 50px;
-  padding-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: bernino;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-/* line 27, src/sass/components/_mainarticle.scss */
-.mainarticle__title {
-  font-size: 28px;
+/* line 26, src/sass/components/_mainarticle.scss */
+.mainarticle__textContent {
+  padding: 40px;
+  width: 60%;
+}
+
+/* line 32, src/sass/components/_mainarticle.scss */
+.mainarticle__Title {
+  font-size: 25px;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  width: 70%;
   font-weight: 700;
-  margin: 0px 0px 10px 0px;
-  padding-top: 10%;
-  padding-left: 50px;
 }
 
-/* line 35, src/sass/components/_mainarticle.scss */
-.mainarticle__text {
-  font-size: 18px;
-  margin-top: 5%;
-  margin-bottom: 30px;
-  line-height: 3;
-  padding-right: 100px;
-  padding-left: 50px;
+/* line 40, src/sass/components/_mainarticle.scss */
+.mainarticle__p {
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 10%;
+  width: 80%;
+}
+
+/* line 49, src/sass/components/_mainarticle.scss */
+.btn__readmore {
+  border-radius: 23px;
+  border: 1px solid black;
+  padding: 10px 40px 10px 40px;
+  background-color: transparent;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1300px) {
+  /* line 65, src/sass/components/_mainarticle.scss */
+  .mainarticle__Title {
+    font-size: 23px;
+  }
+  /* line 70, src/sass/components/_mainarticle.scss */
+  .mainarticle__p {
+    font-size: 15px;
+    width: 100%;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  /* line 81, src/sass/components/_mainarticle.scss */
+  .mainarticle__Title {
+    font-size: 18px;
+  }
+  /* line 86, src/sass/components/_mainarticle.scss */
+  .mainarticle__p {
+    font-size: 12px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 94, src/sass/components/_mainarticle.scss */
+  .hide {
+    display: none;
+  }
+  /* line 98, src/sass/components/_mainarticle.scss */
+  .mainarticle__textContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px;
+    text-align: center;
+  }
+  /* line 107, src/sass/components/_mainarticle.scss */
+  .mainarticle__Title {
+    font-size: 17px;
+  }
+  /* line 112, src/sass/components/_mainarticle.scss */
+  .mainarticle__p {
+    font-size: 14px;
+    line-height: 2;
+  }
+  /* line 117, src/sass/components/_mainarticle.scss */
+  .mainarticle__photo {
+    width: 30% !important;
+  }
+  /* line 121, src/sass/components/_mainarticle.scss */
+  .mainarticle__text {
+    width: 70%;
+  }
+  /* line 126, src/sass/components/_mainarticle.scss */
+  .btn__readmore {
+    font-size: 10px;
+  }
 }
 
 /* line 1, src/sass/components/_ourServices.scss */
@@ -489,7 +577,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 50px 50px 50px;
+  padding: 0px 50px 50px 50px;
 }
 
 /* line 16, src/sass/components/_ourServices.scss */
@@ -566,6 +654,7 @@ button {
   position: relative;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,7 +670,7 @@ button {
           align-items: center;
 }
 
-/* line 80, src/sass/components/_ourServices.scss */
+/* line 81, src/sass/components/_ourServices.scss */
 .ourServices__smallItem {
   width: calc(25% - 5px);
   margin: 2.5px;
@@ -599,19 +688,22 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 900px) {
-  /* line 94, src/sass/components/_ourServices.scss */
+  /* line 98, src/sass/components/_ourServices.scss */
   .ourServices__content {
     width: 100%;
     padding: 0px 0px 50px 0px;
   }
-  /* line 99, src/sass/components/_ourServices.scss */
+  /* line 103, src/sass/components/_ourServices.scss */
   .ourServices__bigItem {
     width: 100%;
   }
-  /* line 103, src/sass/components/_ourServices.scss */
+  /* line 107, src/sass/components/_ourServices.scss */
   .ourServices__smallItem {
     width: calc(50% - 5px);
   }
@@ -635,7 +727,7 @@ button {
   background-color: #252525;
 }
 
-/* line 7, src/sass/components/_news.scss */
+/* line 8, src/sass/components/_news.scss */
 .news__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,13 +742,15 @@ button {
   text-align: center;
 }
 
-/* line 15, src/sass/components/_news.scss */
+/* line 17, src/sass/components/_news.scss */
 .news__title {
-  font-size: 38px;
+  font-size: 36px;
+  padding-right: 5px;
+  padding-left: 5px;
   color: white;
 }
 
-/* line 19, src/sass/components/_news.scss */
+/* line 25, src/sass/components/_news.scss */
 .news__newsList {
   width: 95%;
   display: -webkit-box;
@@ -674,7 +768,7 @@ button {
   padding: 0px 10px 50px 10px;
 }
 
-/* line 28, src/sass/components/_news.scss */
+/* line 35, src/sass/components/_news.scss */
 .news__newsItem {
   width: calc(25% - 50px);
   margin: 20px;
@@ -694,7 +788,7 @@ button {
   background-repeat: no-repeat;
 }
 
-/* line 41, src/sass/components/_news.scss */
+/* line 49, src/sass/components/_news.scss */
 .news__itemText {
   width: 70%;
   height: 90%;
@@ -708,7 +802,7 @@ button {
   padding-left: 10%;
 }
 
-/* line 50, src/sass/components/_news.scss */
+/* line 59, src/sass/components/_news.scss */
 .news__itemTitle {
   font-size: 27px;
   color: white;
@@ -716,13 +810,13 @@ button {
   margin-bottom: 10px;
 }
 
-/* line 57, src/sass/components/_news.scss */
+/* line 67, src/sass/components/_news.scss */
 .news__itemDate {
   font-size: 13px;
   color: white;
 }
 
-/* line 61, src/sass/components/_news.scss */
+/* line 72, src/sass/components/_news.scss */
 .news__itemP {
   font-size: 12px;
   color: white;
@@ -730,7 +824,7 @@ button {
 }
 
 @media (max-width: 1000px) {
-  /* line 69, src/sass/components/_news.scss */
+  /* line 81, src/sass/components/_news.scss */
   .news__newsItem {
     width: calc(50% - 50px);
     margin-right: 10px;
@@ -739,7 +833,7 @@ button {
 }
 
 @media (max-width: 700px) {
-  /* line 77, src/sass/components/_news.scss */
+  /* line 91, src/sass/components/_news.scss */
   .news__newsItem {
     width: calc(100% - 25px);
     margin-right: 10px;
@@ -763,7 +857,7 @@ button {
   font-family: bernino;
 }
 
-/* line 8, src/sass/components/_footer.scss */
+/* line 9, src/sass/components/_footer.scss */
 .footer__content {
   width: 95%;
   display: -webkit-box;
@@ -777,7 +871,7 @@ button {
           align-items: center;
 }
 
-/* line 14, src/sass/components/_footer.scss */
+/* line 16, src/sass/components/_footer.scss */
 .footer__logo {
   padding: 50px 30px 30px 30px;
   width: 40%;
@@ -793,19 +887,19 @@ button {
           justify-content: center;
 }
 
-/* line 21, src/sass/components/_footer.scss */
+/* line 24, src/sass/components/_footer.scss */
 .footer__logoP {
   font-size: 12px;
   line-height: 2;
   color: #616161;
 }
 
-/* line 26, src/sass/components/_footer.scss */
+/* line 30, src/sass/components/_footer.scss */
 .footer__credits {
   font-size: 10px;
 }
 
-/* line 29, src/sass/components/_footer.scss */
+/* line 34, src/sass/components/_footer.scss */
 .footer__contact {
   padding: 50px 30px 30px 30px;
   width: 40%;
@@ -821,7 +915,7 @@ button {
           justify-content: center;
 }
 
-/* line 36, src/sass/components/_footer.scss */
+/* line 42, src/sass/components/_footer.scss */
 .footer__contactContet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,7 +933,7 @@ button {
   margin-bottom: 30px;
 }
 
-/* line 43, src/sass/components/_footer.scss */
+/* line 50, src/sass/components/_footer.scss */
 .footer__contactText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -853,21 +947,21 @@ button {
           justify-content: center;
 }
 
-/* line 48, src/sass/components/_footer.scss */
+/* line 56, src/sass/components/_footer.scss */
 .footer__contactTitle {
   font-size: 14.5px;
   font-weight: 700;
   margin-bottom: 0px;
 }
 
-/* line 53, src/sass/components/_footer.scss */
+/* line 62, src/sass/components/_footer.scss */
 .footer__contactSubTitle {
   font-size: 13.5px;
   font-weight: 400;
   margin-top: 10px;
 }
 
-/* line 59, src/sass/components/_footer.scss */
+/* line 69, src/sass/components/_footer.scss */
 .footer__menu {
   margin-top: 30px;
   display: -webkit-box;
@@ -888,14 +982,14 @@ button {
       flex-wrap: wrap;
 }
 
-/* line 70, src/sass/components/_footer.scss */
+/* line 81, src/sass/components/_footer.scss */
 .footer__menuItem {
   color: #616161;
   font-size: 12px;
   font-weight: 400;
 }
 
-/* line 77, src/sass/components/_footer.scss */
+/* line 89, src/sass/components/_footer.scss */
 .btn__contact {
   border-radius: 23px;
   border: 1px solid #FDFC18;
@@ -907,7 +1001,7 @@ button {
 }
 
 @media (max-width: 1000px) {
-  /* line 88, src/sass/components/_footer.scss */
+  /* line 101, src/sass/components/_footer.scss */
   .footer__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -915,41 +1009,42 @@ button {
             flex-direction: column-reverse;
     text-align: center;
   }
-  /* line 92, src/sass/components/_footer.scss */
+  /* line 106, src/sass/components/_footer.scss */
   .footer__contact {
     width: 90%;
+    padding: 50px 0px 30px 0px;
   }
-  /* line 95, src/sass/components/_footer.scss */
+  /* line 111, src/sass/components/_footer.scss */
   .footer__contactContet {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* line 98, src/sass/components/_footer.scss */
+  /* line 115, src/sass/components/_footer.scss */
   .footer__contactTitle {
     font-size: 18px;
   }
-  /* line 101, src/sass/components/_footer.scss */
+  /* line 119, src/sass/components/_footer.scss */
   .footer__contactSubTitle {
     font-size: 16px;
   }
-  /* line 104, src/sass/components/_footer.scss */
+  /* line 123, src/sass/components/_footer.scss */
   .footer__logo {
     width: 90%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 0px;
+    padding: 0;
   }
-  /* line 110, src/sass/components/_footer.scss */
+  /* line 130, src/sass/components/_footer.scss */
   .footer__menu {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0px;
   }
-  /* line 114, src/sass/components/_footer.scss */
+  /* line 135, src/sass/components/_footer.scss */
   .footer__menuItem {
     margin-right: 15px;
   }

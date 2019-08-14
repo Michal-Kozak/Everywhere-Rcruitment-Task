@@ -1,45 +1,129 @@
 .mainarticle {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 650px;
+  font-family: bernino;
+  background-color: #F5F5F5;
+
 
   &__photo {
-    width: 50%;
+    min-height: 650px;
     height: 100%;
+    width: 50%;
     background-image: url(../img/mainarticle-photo.png);
-    background-position: center;
-    background-size: cover;
-  }
-
-  &__content {
-    background-color: rgba(22, 20, 20, 0.1);
-    height: 100%;
-    width: 50%;
-    padding-left: 50px;
-    padding-right: 50px;
-    display: flex;
-    flex-direction: column;
-    font-family: bernino;
-  }
-
-  &__title {
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0px 0px 10px 0px;
-    padding-top: 10%;
-    padding-left: 50px;
   }
 
   &__text {
-    font-size: 18px;
-    margin-top: 5%;
-    margin-bottom: 30px;
-    line-height: 3;
-    padding-right: 100px;
-    padding-left: 50px;
+    min-height: 650px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+  &__textContent {
+    padding: 40px;
+    width: 60%;
+
+  }
+
+  &__Title {
+    font-size: 25px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    width: 70%;
+    font-weight: 700;
+  }
+
+  &__p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 10%;
+    width: 80%;
+
   }
 }
 
+.btn__readmore {
+  border-radius: 23px;
+  border: 1px solid black;
+  padding: 10px 40px 10px 40px;
+  background-color: transparent;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
 
+@media (max-width: 1300px) {
+  .mainarticle {
+
+
+    &__Title {
+      font-size: 23px;
+
+    }
+
+    &__p {
+      font-size: 15px;
+      width: 100%;
+      line-height: 2;
+
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .mainarticle {
+    &__Title {
+      font-size: 18px;
+
+    }
+
+    &__p {
+      font-size: 12px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hide {
+    display: none;
+  }
+  .mainarticle {
+    &__textContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      text-align: center;
+    }
+
+    &__Title {
+      font-size: 17px;
+
+    }
+
+    &__p {
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    &__photo {
+      width: 30% !important;
+    }
+
+    &__text {
+      width: 70%;
+    }
+
+  }
+  .btn__readmore {
+    font-size: 10px;
+  }
+}

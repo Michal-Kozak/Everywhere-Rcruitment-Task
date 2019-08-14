@@ -1,62 +1,72 @@
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #171717;
   color: white;
   font-family: bernino;
-  &__content{
+
+  &__content {
     width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__logo{
-    padding: 50px 30px 30px 30px;
-    width:40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  &__logoP{
-    font-size: 12px;
-    line-height: 2;
-    color: #616161;
-  }
-  &__credits{
-    font-size: 10px;
-  }
-  &__contact{
+
+  &__logo {
     padding: 50px 30px 30px 30px;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  &__contactContet{
+
+  &__logoP {
+    font-size: 12px;
+    line-height: 2;
+    color: #616161;
+  }
+
+  &__credits {
+    font-size: 10px;
+  }
+
+  &__contact {
+    padding: 50px 30px 30px 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__contactContet {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
   }
-  &__contactText{
+
+  &__contactText {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  &__contactTitle{
+
+  &__contactTitle {
     font-size: 14.5px;
     font-weight: 700;
-    margin-bottom:0px
+    margin-bottom: 0px
   }
-  &__contactSubTitle{
+
+  &__contactSubTitle {
     font-size: 13.5px;
     font-weight: 400;
     margin-top: 10px;
 
   }
-  &__menu{
+
+  &__menu {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
@@ -67,55 +77,66 @@
 
 
   }
-  &__menuItem{
+
+  &__menuItem {
     color: #616161;
     font-size: 12px;
     font-weight: 400;
 
   }
 }
+
 .btn__contact {
   border-radius: 23px;
-  border:1px solid #FDFC18;
+  border: 1px solid #FDFC18;
   padding: 10px 40px 10px 40px;
   background-color: #FDFC18;
   font-size: 13px;
   font-weight: 400;
-  cursor: pointer;}
+  cursor: pointer;
+}
 
 @media (max-width: 1000px) {
-  .footer{
-    &__content{
+  .footer {
+    &__content {
       flex-direction: column-reverse;
       text-align: center;
     }
-    &__contact{
-     width: 90%;
+
+    &__contact {
+      width: 90%;
+      padding: 50px 0px 30px 0px;
     }
-    &__contactContet{
+
+    &__contactContet {
       flex-direction: column;
     }
-    &__contactTitle{
+
+    &__contactTitle {
       font-size: 18px;
     }
-    &__contactSubTitle{
+
+    &__contactSubTitle {
       font-size: 16px;
     }
-    &__logo{
+
+    &__logo {
       width: 90%;
       align-items: center;
-      padding-top: 0px;
+      padding: 0;
 
     }
-    &__menu{
+
+    &__menu {
       justify-content: center;
       margin: 0px;
     }
-    &__menuItem{
+
+    &__menuItem {
       margin-right: 15px;
     }
   }
-  .btn__contact{
+  .btn__contact {
 
   }
 }
